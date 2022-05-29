@@ -16,10 +16,10 @@ contract CustomERC1155Token is ERC1155, Ownable {
     
 
     mapping(string => uint256) public nameToId; //name to id mapping
-    mapping(uint256 => string) public idToName; //id to mapping
+    mapping(uint256 => string) public idToName; //id to name mapping
 
     /*
-    constructor is executed when the factory contract calls its own create method
+    constructor is the first function to be executed when the factory contract calls its own create method
     */
     constructor(
         string memory _contractName,
